@@ -1,0 +1,15 @@
+console.log("hello");
+//exemple 
+setTimeout(function(){
+    console.log("A");
+},1000);
+setTimeout(function(){
+    console.log("B");
+},0);
+getDataFromDatabase(function(err,data){
+    console.log("C");
+    setTimeout(function(){
+        console.log("D");
+    },1000);
+});
+console.log("E")
